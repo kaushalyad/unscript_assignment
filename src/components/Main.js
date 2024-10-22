@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { useState } from "react";
+import CompanyLogo from "./CompanyLogo";
 const Main = () => {
   return (
     <div className="px-[13%] ">
@@ -36,22 +36,64 @@ const Main = () => {
       </div>
       <div>
         <div>
-          <p className="font-mona-sans text-[48px] font-bold leading-[60px] text-center">
+          <p className="font-mona-sans text-[48px] font-bold leading-[60px] text-center mt-8">
             Trusted by Over 10,000+ Customers Worldwide.
           </p>
         </div>
-        <div className="grid grid-cols-6 gap-1">
+        <div className="grid grid-cols-6 mt-8">
           {Array.from({ length: 18 }).map((_, index) => (
-            <div key={index} className="bg-gray-200 p-4">
-              Item {index + 1}
+            <div key={index} className="border border-gray-300 p-2">
+              <CompanyLogo src={`/images/companyLogos/logo${index + 1}.png`} />
             </div>
           ))}
         </div>
       </div>
-      <div>4</div>
+      <div className="flex">
+        <div>
+          <div>
+            <img src="" />
+          </div>
+          <div>
+            <p>Minutes, not Hours.</p>
+          </div>
+          <div>
+            <p>
+              No need for lengthy processes like filming, editing, or
+              storyboarding, content can be created in minutes by simply
+              providing a script.
+            </p>
+          </div>
+          <div>
+            <p></p>
+          </div>
+        </div>
+        <div></div>
+      </div>
       <div>5</div>
       <div>6</div>
-      <div>7</div>
+      <div className="flex">
+        <div>
+          <img src="./images/Auto_Subtitle_Generator.png"></img>
+        </div>
+        <div className="flex flex-col gap-4">
+          <div>
+            <img src="./images/web.svg"></img>
+          </div>
+          <div>
+            <p className="font-inter text-[36px] font-bold leading-[40px] text-left"><span className="text-[#0158F7]">140+</span> Languages</p>
+          </div>
+          <div>
+            <p>
+              Engage non-English speaking audiences by automating dubbing and
+              translation to create and distribute multilingual videos quickly.
+            </p>
+          </div>
+          <div className="flex gap-4">
+            <button className=" text-[#0158F7]">Discover More</button>
+            <img src="./images/arrow.svg"></img>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

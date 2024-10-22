@@ -2,8 +2,8 @@ import React from 'react'
 
 const CompanyLogo= ({src}) => {
   return (
-    <div>
-      
+    <div className="flex justify-center items-center ">
+      <img src={src} className=" p-5" />
     </div>
   )
 }
