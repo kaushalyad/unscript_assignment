@@ -2,11 +2,11 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="w-full ">
-      <div className="w-[1321.67px] h-[300px] top-[4585.28px] left-[443.52px] p-[81px] gap-[10px]">
-        <div className="">
-          <div>
-            <p>Book a demo</p>
+    <footer className="flex flex-col  items-center">
+      <div className="w-[70%] h-[300px] p-[81px]  gap-[10px] bg-gradient-to-r from-blue-300 to-red-300  rounded-tl-[21px] rounded-tr-[21px]">
+        <div className=" flex justify-between">
+          <div className=" w-1/2">
+            <p className=" text-black font-mona-sans text-[72px] font-bold leading-[90px] text-left">Book a demo</p>
           </div>
           <div>
             <div>
@@ -15,14 +15,24 @@ const Footer = () => {
                 with Microsoft’s VASA-1 & Alibaba’s EMO
               </p>
             </div>
-            <div>
-              <input type="text" placeholder="Email" />
-              <button>Subscribe</button>
-            </div>
+            <div className="flex justify-center gap-2 mt-10">
+          <div>
+            <input
+              className=" w-[259px] h-[43px] top-[280px] left-[293.25px] rounded-[6px] bg-white border-t border-transparent pl-4 "
+              type="text"
+              placeholder="Email"
+            />
+          </div>
+          <div>
+            <button className=" w-[131px] h-[43px]  left-[557.75px] py-[12px] px-[20px]  rounded-[6px] text-center  border-transparent  bg-black text-white">
+              Subscribe
+            </button>
+          </div>
+        </div>
           </div>
         </div>
       </div>
-      <div className="bg-[#0C111D] flex flex-col px-20">
+      <div className="bg-[#0C111D] flex flex-col px-20 w-[100%]">
         <div className="flex justify-between items-center py-4 border-b-2">
           <div>
             <img src="/images/unscript_footer_logo.svg"></img>

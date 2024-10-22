@@ -3,7 +3,7 @@ import CompanyLogo from "./CompanyLogo";
 const Main = () => {
   return (
     <div className="px-[13%] ">
-      <div className=" mt-28 text-center pb-20 bg-slate-200">
+      <div className=" mt-28 text-center pb-20 bg-gradient-to-r from-yellow-50 to-blue-50">
         <div>
           <p className=" font-mona-sans text-[72px] font-bold leading-[90px]">
             Create <span className="gradient-text">Professional Videos</span> in
@@ -48,42 +48,98 @@ const Main = () => {
           ))}
         </div>
       </div>
-      <div className="flex">
-        <div>
+      <div className="flex ">
+        <div className="flex flex-col gap-8">
           <div>
-            <img src="" />
+            <img src="./images/video.svg"></img>
           </div>
           <div>
-            <p>Minutes, not Hours.</p>
+            <p className="font-inter text-[36px] font-bold leading-[40px] text-left">
+              Minutes, not Hours.
+            </p>
           </div>
           <div>
-            <p>
+            <p className="font-inter text-[20px] font-normal leading-[28px] text-left">
               No need for lengthy processes like filming, editing, or
               storyboarding, content can be created in minutes by simply
               providing a script.
             </p>
           </div>
-          <div>
-            <p></p>
+          <div className="flex gap-4">
+            <button className=" text-[#0158F7]">Discover More</button>
+            <img src="./images/arrow.svg"></img>
           </div>
         </div>
-        <div></div>
+        <div>
+          <img src="./images/meeting_pic.png"></img>
+        </div>
       </div>
-      <div>5</div>
-      <div>6</div>
+      <div className="flex">
+        <div>
+          <img src="./images/coinpic.png"></img>
+        </div>
+        <div className="flex flex-col gap-8">
+          <div>
+            <img src="./images/reduce_cost.svg"></img>
+          </div>
+          <div>
+            <p className="font-inter text-[36px] font-bold leading-[40px] text-left">
+              80% cost reduction
+            </p>
+          </div>
+          <div>
+            <p className="font-inter text-[20px] font-normal leading-[28px] text-left">
+              Eliminate the need for expensive equipment, location rentals, and
+              professional videographer, reducing overall production costs.
+            </p>
+          </div>
+          <div className="flex gap-4">
+            <button className=" text-[#0158F7]">Discover More</button>
+            <img src="./images/arrow.svg"></img>
+          </div>
+        </div>
+      </div>
+      <div className="flex ">
+        <div className="flex flex-col gap-8">
+          <div>
+            <img src="./images/growth_arrow.svg"></img>
+          </div>
+          <div>
+            <p className="font-inter text-[36px] font-bold leading-[40px] text-left">
+              A Crew of 15 vs 1 AI tool
+            </p>
+          </div>
+          <div>
+            <p className="font-inter text-[20px] font-normal leading-[28px] text-left">
+              Video production coordination involves managing schedules and
+              equipment. AI videos streamline this, reducing labor and
+              management efforts.
+            </p>
+          </div>
+          <div className="flex gap-4">
+            <button className=" text-[#0158F7]">Discover More</button>
+            <img src="./images/arrow.svg"></img>
+          </div>
+        </div>
+        <div>
+          <img src="./images/3d_design.png"></img>
+        </div>
+      </div>
       <div className="flex">
         <div>
           <img src="./images/Auto_Subtitle_Generator.png"></img>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-8">
           <div>
             <img src="./images/web.svg"></img>
           </div>
           <div>
-            <p className="font-inter text-[36px] font-bold leading-[40px] text-left"><span className="text-[#0158F7]">140+</span> Languages</p>
+            <p className="font-inter text-[36px] font-bold leading-[40px] text-left">
+              <span className="text-[#0158F7]">140+</span> Languages
+            </p>
           </div>
           <div>
-            <p>
+            <p className="font-inter text-[20px] font-normal leading-[28px] text-left">
               Engage non-English speaking audiences by automating dubbing and
               translation to create and distribute multilingual videos quickly.
             </p>
