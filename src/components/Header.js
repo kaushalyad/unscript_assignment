@@ -64,11 +64,17 @@ const Header = () => {
             />
           </svg>
           {isDropdownOpen.useCases && (
-            <div className="absolute top-full mt-2 w-48 bg-white shadow-lg rounded-lg p-2">
+            <div className="absolute top-full  w-48 bg-white shadow-lg rounded-lg p-2">
               <ul>
-                <li className="p-2 hover:bg-gray-100 cursor-pointer">Use Case 1</li>
-                <li className="p-2 hover:bg-gray-100 cursor-pointer">Use Case 2</li>
-                <li className="p-2 hover:bg-gray-100 cursor-pointer">Use Case 3</li>
+                <li className="p-2 hover:bg-gray-100 cursor-pointer">
+                  Use Case 1
+                </li>
+                <li className="p-2 hover:bg-gray-100 cursor-pointer">
+                  Use Case 2
+                </li>
+                <li className="p-2 hover:bg-gray-100 cursor-pointer">
+                  Use Case 3
+                </li>
               </ul>
             </div>
           )}
@@ -96,11 +102,17 @@ const Header = () => {
             />
           </svg>
           {isDropdownOpen.features && (
-            <div className="absolute top-full mt-2 w-48 bg-white shadow-lg rounded-lg p-2">
+            <div className="absolute top-full w-48 bg-white shadow-lg rounded-lg p-2">
               <ul>
-                <li className="p-2 hover:bg-gray-100 cursor-pointer">Feature 1</li>
-                <li className="p-2 hover:bg-gray-100 cursor-pointer">Feature 2</li>
-                <li className="p-2 hover:bg-gray-100 cursor-pointer">Feature 3</li>
+                <li className="p-2 hover:bg-gray-100 cursor-pointer">
+                  Feature 1
+                </li>
+                <li className="p-2 hover:bg-gray-100 cursor-pointer">
+                  Feature 2
+                </li>
+                <li className="p-2 hover:bg-gray-100 cursor-pointer">
+                  Feature 3
+                </li>
               </ul>
             </div>
           )}
@@ -128,11 +140,17 @@ const Header = () => {
             />
           </svg>
           {isDropdownOpen.resources && (
-            <div className="absolute top-full mt-2 w-48 bg-white shadow-lg rounded-lg p-2">
+            <div className="absolute top-full  w-48 bg-white shadow-lg rounded-lg p-2">
               <ul>
-                <li className="p-2 hover:bg-gray-100 cursor-pointer">Resource 1</li>
-                <li className="p-2 hover:bg-gray-100 cursor-pointer">Resource 2</li>
-                <li className="p-2 hover:bg-gray-100 cursor-pointer">Resource 3</li>
+                <li className="p-2 hover:bg-gray-100 cursor-pointer">
+                  Resource 1
+                </li>
+                <li className="p-2 hover:bg-gray-100 cursor-pointer">
+                  Resource 2
+                </li>
+                <li className="p-2 hover:bg-gray-100 cursor-pointer">
+                  Resource 3
+                </li>
               </ul>
             </div>
           )}
@@ -160,11 +178,17 @@ const Header = () => {
             />
           </svg>
           {isDropdownOpen.company && (
-            <div className="absolute top-full mt-2 w-48 bg-white shadow-lg rounded-lg p-2">
+            <div className="absolute top-full  w-48 bg-white shadow-lg rounded-lg p-2">
               <ul>
-                <li className="p-2 hover:bg-gray-100 cursor-pointer">About Us</li>
-                <li className="p-2 hover:bg-gray-100 cursor-pointer">Careers</li>
-                <li className="p-2 hover:bg-gray-100 cursor-pointer">Contact</li>
+                <li className="p-2 hover:bg-gray-100 cursor-pointer">
+                  About Us
+                </li>
+                <li className="p-2 hover:bg-gray-100 cursor-pointer">
+                  Careers
+                </li>
+                <li className="p-2 hover:bg-gray-100 cursor-pointer">
+                  Contact
+                </li>
               </ul>
             </div>
           )}
@@ -172,11 +196,9 @@ const Header = () => {
       </div>
 
       {/* Contact Sales Button */}
-      <div className="bg-custom-gradient px-[18px] py-[10px] rounded-[6px]">
-        <p className="font-mona-sans text-[16px] font-semibold leading-[19.2px] text-center text-white">
-          Contact Sales
-        </p>
-      </div>
+      <button className="font-mona-sans bg-custom-gradient w-[158px] h-[52px] text-[16px] font-semibold  text-center text-white rounded-[6px]">
+        Contact Sales
+      </button>
     </nav>
   );
 };

@@ -3,14 +3,14 @@ import CompanyLogo from "./CompanyLogo";
 const Main = () => {
   return (
     <div className="px-[13%] ">
-      <div className=" mt-28 text-center pb-20 bg-gradient-to-r from-yellow-50 to-blue-50">
-        <div>
+      <div className=" mt-24 text-center pb-20 bg-gradient-to-r from-yellow-50 to-blue-50">
+        <div className=" px-24">
           <p className=" font-mona-sans text-[72px] font-bold leading-[90px]">
             Create <span className="gradient-text">Professional Videos</span> in
             Minutes with AI Avatars
           </p>
         </div>
-        <div>
+        <div className="mt-7">
           <p className="font-inter text-[18px] font-medium leading-[28px] text-center">
             Transform your text into engaging video content instantly, while
             saving time and cutting costs.
@@ -19,13 +19,13 @@ const Main = () => {
         <div className="flex justify-center gap-2 mt-10">
           <div>
             <input
-              className=" w-[259px] h-[43px] top-[280px] left-[293.25px] rounded-[6px] bg-white border-t border-transparent pl-4 "
+              className=" w-[259px] h-[43px] rounded-[6px] text-black bg-white border-t border-transparent pl-4 "
               type="text"
               placeholder="Email"
             />
           </div>
           <div>
-            <button className=" w-[131px] h-[43px]  left-[557.75px] py-[12px] px-[20px]  rounded-[6px] text-center  border-transparent  bg-custom-gradient text-white">
+            <button className=" w-[131px] h-[43px] font-bold  px-[20px]   rounded-[6px] text-center  border-transparent  bg-custom-gradient text-white">
               Get a Demo
             </button>
           </div>
@@ -40,22 +40,22 @@ const Main = () => {
             Trusted by Over 10,000+ Customers Worldwide.
           </p>
         </div>
-        <div className="grid grid-cols-6 mt-8">
+        <div className="grid grid-cols-6 mt-14 px-20">
           {Array.from({ length: 18 }).map((_, index) => (
-            <div key={index} className="border border-gray-300 p-2">
+            <div key={index} className="border border-gray-100 p-2">
               <CompanyLogo src={`/images/companyLogos/logo${index + 1}.png`} />
             </div>
           ))}
         </div>
       </div>
-      <div className="flex ">
-        <div className="flex flex-col gap-8">
+      <div className="flex mt-10 gap-8  ">
+        <div className="flex flex-col pr-24">
           <div>
             <img src="./images/video.svg"></img>
           </div>
           <div>
-            <p className="font-inter text-[36px] font-bold leading-[40px] text-left">
-              Minutes, not Hours.
+            <p className="font-inter text-[36px] font-bold  text-left">
+              <span className=" text-[#0158F7]">Minutes,</span> not Hours.
             </p>
           </div>
           <div>
@@ -65,8 +65,8 @@ const Main = () => {
               providing a script.
             </p>
           </div>
-          <div className="flex gap-4">
-            <button className=" text-[#0158F7]">Discover More</button>
+          <div className="flex gap-4 cursor-pointer">
+            <button className=" text-[#0158F7] font-semibold">Discover More</button>
             <img src="./images/arrow.svg"></img>
           </div>
         </div>
